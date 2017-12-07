@@ -19,7 +19,7 @@ import com.interview.date.service.DateComparisonService;
 
 /**
  * @author naveen
- *
+ * Date comparison service is exposed as a rest service.
  */
 
 @RestController
@@ -38,11 +38,6 @@ public class DateComparisonController {
 	/**
 	 * Validates the input data, and compute the difference between the two dates in
 	 * days.
-	 *
-	 * @param req
-	 *            http the request.
-	 * @param response
-	 *            the http response.
 	 * @return ResponseEntity
 	 */
 	@RequestMapping(value = "/difference", method = RequestMethod.GET)
